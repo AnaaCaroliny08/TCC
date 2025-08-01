@@ -1,24 +1,34 @@
 *{
-    background-color: aliceblue;
-    border: 0;
+    
     padding: 0;
-    margin: 10px;
+    margin: 0;
+    box-sizing: border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     color: black;
 }
 
-:root{
---fundo:#e70c7;
---contraste: #24303e;
---realce: #8b5f2b;
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(38, 136, 5);
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #f0fdf4;
+  border-bottom: 1px solid #d0e7dc;
+  padding: 3rem 0;
+
+ top: 0;
+  
 }
 
 .logo{
-   height: 8rem;
-    width:10rem;
+   height: 6rem;
+    width:7rem;
     top: 0;
     right: 0;
     display: flex;
-
+   
 }
 
 .cadastre-se {
@@ -36,20 +46,17 @@ display: flex;
    
 
 .link_menu{
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    height: 8rem;
-    padding: 0 2rem;
-    align-items: center;
-
-   
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+    
 }
 
 .fraseprincipal{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    
 
 }
 
@@ -68,8 +75,14 @@ height: 1px;
 }
 
 .imagens{
-    display: flex;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+   
 }
+
+
 
 .temas{
     text-align: center;
@@ -91,3 +104,4 @@ height: 1px;
 display: flex;
 
 }
+
